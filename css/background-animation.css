@@ -1,0 +1,25 @@
+.background-animation {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	overflow: hidden;
+	z-index: 15;
+}
+
+.slides {
+	display: flex;
+	height: 100%;
+	z-index: 14;
+}
+.slide {
+	min-width: 70%;
+	position: relative;
+	z-index: 13;
+}
+.slide object {
+	width: 100%;
+	height: 100%;
+	z-index: 12;
+}
