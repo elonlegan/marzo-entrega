@@ -10,6 +10,18 @@
 	<link rel="stylesheet" href="css/background-animation.css">
 </head>
 <body>
+<!-- modal ------------------------------------------------------------------------------>
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content" id="game-modal">
+        <span class="close">&times;</span>
+  </div>
+
+</div>
+<!-- modal ------------------------------------>	
+
+
       <section class="logoFygp">
         <a href="https://fygproyectos.com" target="_blank">
             <img src="img/FyGP_Formulacion_y_gestion_de_proyectos.png" width="" height="" />
@@ -100,7 +112,7 @@
                           <h2>AL 2026 LAS IDEAS DE NUESTROS CLIENTES ALIADOS Y CONSULTORES<br>
                           SERÁN PROYECTOS Y NEGOCIOS QUE RECORRAN EL MUNDO CREANDO VALOR</h2>
                         
-                          <svg version="1.1" class="avion" id="Capa_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
+                          <svg version="1.1" class="avion" id="Capa_1 myBtn" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
                              xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 640 250"
                              style="enable-background:new 0 0 640 250;" xml:space="preserve">
                           <style type="text/css">
@@ -5549,6 +5561,11 @@
   <div class="counter"></div>
 </div>-->
 
+
+
+
+
+
 <script src="js/jquery.min.js"></script>
 <script src="js/sprites.js"></script>
 <script src="js/jquery.timelinr-0.9.7.js"></script>
@@ -5572,6 +5589,9 @@ jQuery(document).ready(function ($) {
 });
 </script>
 <script src="js/background-animation.js"></script>
+<script src="js/game-modal.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/phaser@3.15.1/dist/phaser-arcade-physics.min.js"></script>
+<script src="js/index.js" type="module"></script>
 <script src="js/scripts.js"></script>
 </body>
 </html>

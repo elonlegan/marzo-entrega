@@ -13,7 +13,7 @@ function slideBackground() {
 		slidePosition = slidePosition - slideWidth;
 	}
 	slide.style.transform = `translateX(${-slidePosition}px)`;
-	slidePosition++;
+	slidePosition += 0.5;
 }
 
-setInterval(slideBackground, 1);
+setInterval(slideBackground, 100);
