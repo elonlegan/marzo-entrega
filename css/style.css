@@ -389,21 +389,22 @@ a.selected {
       text-indent: -9999px;
       overflow: hidden;
       background-size: contain;
+      opacity: .3;
     }
       #next:hover,
       #prev:hover {
-        opacity: .8;
+        opacity: 1;
         transform: scale(1.25);
       }
       #next {
         right: 0;
         background-image: url('../img/next-arrow.png');
-        margin-right: 20px;
+        margin-right: 6px;
       }
       #prev {
         left: 0;
         background-image: url('../img/prev-arrow.png');
-        margin-left: 20px;
+        margin-left: 6px;
       }
         #next.disabled,
         #prev.disabled {

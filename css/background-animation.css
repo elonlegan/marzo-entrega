@@ -74,3 +74,39 @@
 	text-decoration: none;
 	cursor: pointer;
 }
+
+.container.outside-arrows-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	bottom: 85px;
+	width: 30%;
+	height: 10vh;
+	z-index: 999999999999999999999999;
+}
+.container.outside-arrows-container.left {
+	left: 0;
+}
+.container.outside-arrows-container.right {
+	right: 0;
+}
+
+.container.outside-arrows-container .outside-arrows {
+	display: unset !important;
+
+	position: unset !important;
+	top: 270px;
+	width: 40px !important;
+	height: 40px !important;
+	background-position: center center;
+	background-repeat: no-repeat;
+	text-indent: -9999px;
+	overflow: hidden;
+	background-size: contain;
+	opacity: 0.5 !important;
+}
+
+.container.outside-arrows-container .outside-arrows:hover {
+	opacity: 1 !important;
+}
