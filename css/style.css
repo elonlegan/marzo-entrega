@@ -379,29 +379,30 @@ a.selected {
     
     #next,
     #prev {
-      position: absolute;
+          position: absolute;
       top: 0;
-      font-size: 70px;
-      top: 170px;
-      width: 22px;
-      height: 38px;
-      background-position: 0 0;
+      top: 270px;
+      width: 40px;
+      height: 40px;
+      background-position: center center;
       background-repeat: no-repeat;
       text-indent: -9999px;
       overflow: hidden;
+      background-size: contain;
     }
       #next:hover,
       #prev:hover {
-        background-position: 0 -76px;
+        opacity: .8;
+        transform: scale(1.25);
       }
       #next {
         right: 0;
-        background-image: url('../img/next.png');
+        background-image: url('../img/next-arrow.png');
         margin-right: 20px;
       }
       #prev {
         left: 0;
-        background-image: url('../img/prev.png');
+        background-image: url('../img/prev-arrow.png');
         margin-left: 20px;
       }
         #next.disabled,
@@ -1599,15 +1600,16 @@ a.selected {
 }
 
 .closeCard {
-  right: -276px;
-  top: 4px;
-  position: absolute;
-  color: #fff;
-  margin-right: 16.9rem;
-  width: 20px;
-  height: 20px;
-  text-align: center;
-  font-size: 12px;
-  font-weight: bold;
-  cursor: pointer;
+  right: 500px;
+    top: 21px;
+    position: absolute;
+    color: #181d2f;
+    margin-right: 16.9rem;
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 999;
 }
