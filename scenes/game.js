@@ -50,7 +50,7 @@ export class Game extends Phaser.Scene {
 		this.load.audio('startgamesample', 'sounds/start-game.ogg');
 		this.load.audio('livelostsample', 'sounds/live-lost.ogg');
 		this.load.audio('changeTab', 'sounds/change-tab.ogg');
-		this.load.audio('breakAsteroid', 'sounds/break-asteroid.wav');
+		this.load.audio('breakAsteroid', 'sounds/ast-exp.mp3');
 		this.load.audio('shoot', 'sounds/shoot.wav');
 		this.objects = {};
 	}
@@ -163,16 +163,16 @@ export class Game extends Phaser.Scene {
 
 		if (this.cursors.up.isDown || this.keyW.isDown) {
 			this.changeTabSample.play();
-			this.platform.setVelocityY(-11 * delta);
+			this.platform.setVelocityY(-500);
 		} else if (this.cursors.down.isDown || this.keyS.isDown) {
-			this.platform.setVelocityY(11 * delta);
+			this.platform.setVelocityY(500);
 			this.changeTabSample.play();
 		} else if (this.cursors.left.isDown || this.keyA.isDown) {
-			this.platform.setVelocityX(-11 * delta);
+			this.platform.setVelocityX(-500);
 			this.platform.setVelocityY(0);
 		} else if (this.cursors.right.isDown || this.keyD.isDown) {
 			this.platform.setVelocityY(0);
-			this.platform.setVelocityX(11 * delta);
+			this.platform.setVelocityX(500);
 		} else {
 			this.platform.setVelocity(0, 0);
 		}
@@ -244,6 +244,7 @@ export class Game extends Phaser.Scene {
 
 	playerhit(player, ast) {
 		ast.destroy();
+		this.brakeAsteroidSample.play();
 		let gameNotFinished = this.liveCounter.liveLost();
 		if (!gameNotFinished) {
 			this.setInitialPlatformState();
