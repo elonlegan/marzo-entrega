@@ -341,7 +341,7 @@ a.selected {
         }
         #issues li img {
           float: left;
-          margin: 10px 30px 10px 55px;
+          margin: 10px 30px 10px 35px;
           background: transparent;
           -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF)"; /* IE 8 */   
           filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF);/* IE 6 & 7 */      
@@ -378,8 +378,10 @@ a.selected {
       }
     
     #next,
-    #prev {
-          position: absolute;
+    #prev,
+    #nextout,
+    #prevout {
+      position: absolute;
       top: 0;
       top: 270px;
       width: 40px;
@@ -392,22 +394,28 @@ a.selected {
       opacity: .3;
     }
       #next:hover,
-      #prev:hover {
+      #prev:hover,
+      #nextout:hover,
+      #prevout:hover {
         opacity: 1;
         transform: scale(1.25);
       }
-      #next {
+      #next,
+      #nextout {
         right: 0;
         background-image: url('../img/next-arrow.png');
         margin-right: 6px;
       }
-      #prev {
+      #prev,
+      #prevout {
         left: 0;
         background-image: url('../img/prev-arrow.png');
         margin-left: 6px;
       }
         #next.disabled,
-        #prev.disabled {
+        #prev.disabled,
+        #nextout.disabled,
+        #prevout.disabled {
           opacity: 0.2;
         }
 
@@ -1601,7 +1609,7 @@ a.selected {
 }
 
 .closeCard {
-  right: 500px;
+  right: -267px;
     top: 21px;
     position: absolute;
     color: #181d2f;
