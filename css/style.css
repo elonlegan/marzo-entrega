@@ -146,7 +146,7 @@ a.selected {
 }
 
 .timelinespace #timeline {
-    width: 800px;
+    width: 840px;
     height: 100%;
     overflow: hidden;
     margin: auto;
@@ -329,7 +329,7 @@ a.selected {
       padding-bottom: 20px;
     } 
       #issues li {
-        width: 800px;
+        width: 803px;
         /*height: 350px;*/
         list-style: none;
         float: left;
@@ -341,7 +341,7 @@ a.selected {
         }
         #issues li img {
           float: left;
-          margin: 10px 30px 10px 35px;
+          margin: 30px 30px 10px 35px;
           background: transparent;
           -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF)"; /* IE 8 */   
           filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF);/* IE 6 & 7 */      
@@ -1612,7 +1612,7 @@ a.selected {
   right: -267px;
     top: 21px;
     position: absolute;
-    color: #181d2f;
+    color: #307699;
     margin-right: 16.9rem;
     width: 24px;
     height: 24px;
@@ -1621,4 +1621,8 @@ a.selected {
     font-weight: bold;
     cursor: pointer;
     z-index: 999;
+}
+
+.closeCard:hover{
+  transform: scale(1.25);
 }
