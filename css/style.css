@@ -160,6 +160,7 @@ a.selected {
     font-weight: 800;
     font-size: 20px;
     color:#EEC341;
+    z-index: -1;
   }
     #dates {
       /*width: 800px !important;*/
@@ -1622,7 +1623,6 @@ a.selected {
     cursor: pointer;
     z-index: 999;
 }
-
 .closeCard:hover{
   transform: scale(1.25);
 }
