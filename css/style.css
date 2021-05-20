@@ -1626,3 +1626,45 @@ a.selected {
 .closeCard:hover{
   transform: scale(1.25);
 }
+
+
+@media (max-width: 1480px) {
+ #issues {
+   margin: 0;
+   height: 440px;
+ }
+
+ .bloqueimagenes {
+    margin-bottom: 10px;
+    margin-top: 51px;
+}
+
+img.imagenexperiencia {
+    height: 82%;
+    width: 30%;
+}
+
+.datosexperiencia {
+    width: 60%;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+.bloquecompleto{
+  height: 291px;
+}
+
+}
+
+@media (max-width: 1024px) {
+ #issues {
+   margin: 0;
+   height: 300px;
+ }
+
+
+ .bloquecompleto{
+  height: 170px;
+}
+}
+
