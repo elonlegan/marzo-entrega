@@ -51,7 +51,7 @@
   ---------------------------------------------- */
 .logoFygp{
   position: fixed;
-  z-index: 15;
+  z-index: 12;
   margin-left: 30px;
   margin-top: 70px;
 }
@@ -79,7 +79,7 @@
   70%{margin-top:80px; padding-left: 15px;}
   80%{margin-top:70px; padding-left: 10px;}
   90%{margin-top:60px; padding-left: 05px;}
-  100%{margin-top:50px;  padding-left: 0px;}*/
+  100%{margin-top:50px;  padding-left: 0px;}
 }
 #animated_div svg{
   animation: animacionavion 15s infinite;
@@ -1629,19 +1629,21 @@ a.selected {
 
 
 @media (max-width: 1480px) {
- #issues {
-   margin: 0;
-   height: 440px;
- }
+  #issues {
+    margin: 0;
+    height: 402px;
+  }
 
- .bloqueimagenes {
+  .bloqueimagenes {
     margin-bottom: 10px;
-    margin-top: 51px;
+    margin-top: 3%;
+    width: 100%;
 }
 
-img.imagenexperiencia {
-    height: 82%;
+#issues li img.imagenexperiencia {
+    height: 90%;
     width: 30%;
+    margin: 12px 30px 10px 35px;
 }
 
 .datosexperiencia {
@@ -1650,20 +1652,56 @@ img.imagenexperiencia {
     overflow-y: scroll;
 }
 
+/* Tamaño del scroll */
+.datosexperiencia::-webkit-scrollbar {
+  width: 8px;
+}
+
+ /* Estilos barra (thumb) de scroll */
+.datosexperiencia::-webkit-scrollbar-thumb {
+  background: #eec341;
+  border-radius: 4px;
+}
+
+.datosexperiencia::-webkit-scrollbar-thumb:active {
+  background-color: #886f25;
+}
+
+.datosexperiencia::-webkit-scrollbar-thumb:hover {
+  background: #bd9a33;
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+ /* Estilos track de scroll */
+.datosexperiencia::-webkit-scrollbar-track {
+  background: #e1e1e1;
+  border-radius: 4px;
+}
+
+.datosexperiencia::-webkit-scrollbar-track:hover, 
+.datosexperiencia::-webkit-scrollbar-track:active {
+  background: #d4d4d4;
+}
+
+
 .bloquecompleto{
   height: 291px;
+}
+
+.closeCard{
+  top: 0;
 }
 
 }
 
 @media (max-width: 1024px) {
- #issues {
-   margin: 0;
-   height: 300px;
- }
+  #issues {
+    margin: 0;
+    height: 300px;
+  }
 
 
- .bloquecompleto{
+  .bloquecompleto{
   height: 170px;
 }
 }
