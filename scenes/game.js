@@ -19,14 +19,14 @@ export class Game extends Phaser.Scene {
 
 	preload() {
 		this.background = [
-			'../images/Japon.svg',
-			'../images/lima.svg',
-			'../images/hong_kong.svg',
-			'../images/londres.svg',
-			'../images/toronto_.svg',
-			'../images/rio_janeiro.svg',
-			'../images/bogota.svg',
-			'../images/chicago.svg',
+			'./img/animados/Japon.svg',
+			'./img/animados/lima.svg',
+			'./img/animados/hong_kong.svg',
+			'./img/animados/londres.svg',
+			'./img/animados/toronto_.svg',
+			'./img/animados/rio_janeiro.svg',
+			'./img/animados/bogota.svg',
+			'./img/animados/chicago.svg',
 		];
 		this.backgroundWidth = 700;
 		this.backgroundHeight = 700;

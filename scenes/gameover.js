@@ -8,14 +8,14 @@ export class Gameover extends Phaser.Scene {
 
 	preload() {
 		this.background = [
-			'../../img/Animados/Japon.svg',
-			'../../img/Animados/lima.svg',
-			'../../img/Animados/hong_kong.svg',
-			'../../img/Animados/londres.svg',
-			'../../img/Animados/toronto_.svg',
-			'../../img/Animados/rio_janeiro.svg',
-			'../../img/Animados/bogota.svg',
-			'../../img/Animados/chicago.svg',
+			'./img/Animados/Japon.svg',
+			'./img/Animados/lima.svg',
+			'./img/Animados/hong_kong.svg',
+			'./img/Animados/londres.svg',
+			'./img/Animados/toronto_.svg',
+			'./img/Animados/rio_janeiro.svg',
+			'./img/Animados/bogota.svg',
+			'./img/Animados/chicago.svg',
 		];
 		this.backgroundWidth = 700;
 		this.backgroundHeight = 700;
