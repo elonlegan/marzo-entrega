@@ -19,14 +19,14 @@ export class Game extends Phaser.Scene {
 
 	preload() {
 		this.background = [
-			'./img/animados/Japon.svg',
-			'./img/animados/lima.svg',
-			'./img/animados/hong_kong.svg',
-			'./img/animados/londres.svg',
-			'./img/animados/toronto_.svg',
-			'./img/animados/rio_janeiro.svg',
-			'./img/animados/bogota.svg',
-			'./img/animados/chicago.svg',
+			'https://elonlegan.github.io/marzo-entrega/img/Animados/Japon.svg',
+			'https://elonlegan.github.io/marzo-entrega/img/Animados/lima.svg',
+			'https://elonlegan.github.io/marzo-entrega/img/Animados/hong_kong.svg',
+			'https://elonlegan.github.io/marzo-entrega/img/Animados/londres.svg',
+			'https://elonlegan.github.io/marzo-entrega/img/Animados/toronto_.svg',
+			'https://elonlegan.github.io/marzo-entrega/img/Animados/rio_janeiro.svg',
+			'https://elonlegan.github.io/marzo-entrega/img/Animados/bogota.svg',
+			'https://elonlegan.github.io/marzo-entrega/img/Animados/chicago.svg',
 		];
 		this.backgroundWidth = 700;
 		this.backgroundHeight = 700;
